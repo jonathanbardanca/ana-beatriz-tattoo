@@ -4,4 +4,17 @@
   --font-italiana: "Italiana", serif;
   --font-urbanist: "Urbanist", sans-serif;
   --font-script: "Italianno", "Italiana", serif;
+
+  --color-pink: #DB7093;
+  --color-black-100: #000000;
+  --color-black-90: #121215;
+  --color-black-80: #1B1B1E;
+  --color-gray-primary: #B3B3B3;
+  --color-gray-secundary: #A1A1A6;
+}
+
+@utility container {
+  width: 100%;
+  max-width: 1040px; /* Largura cravada do conteúdo central */
+  margin: 0 auto;
 }
