@@ -18,3 +18,29 @@
   max-width: 1040px; /* Largura cravada do conteúdo central */
   margin: 0 auto;
 }
+
+.menu-item {
+  position: relative;
+  font-family: var(--font-urbanist);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #B3B3B3;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-pink);
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
