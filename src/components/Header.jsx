@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 z-20 w-full bg-black border-b border-white/10">
-      <div className="max-w-[1040px] w-full mx-auto px-4 flex items-center justify-between py-4">
+      <div className="max-w-260 w-full mx-auto px-4 flex items-center justify-between py-4">
   
         <div>
           <span className="text-[36px] font-script text-pink">

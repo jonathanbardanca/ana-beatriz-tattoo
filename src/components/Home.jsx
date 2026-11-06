@@ -5,6 +5,7 @@ export default function Home() {
     <section 
       id="section-home" 
       className="relative w-full min-h-screen bg-black text-white flex items-center overflow-hidden"
+      aria-label="home"
     >
 
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
@@ -19,13 +20,13 @@ export default function Home() {
           Seu navegador não suporta vídeos em HTML5.
         </video>
         
-        <div className="absolute inset-0 bg-linear-to-r from-black via-black/80 to-transparent" />
-      </div>
+      <div className="absolute inset-0 bg-linear-to-r from-black via-black/80 to-transparent" />
+      </div> {/*div que faz gradiente de preto para transparente no vídeo */}
 
-      <div className="relative z-10 max-w-[1140px] w-full mx-auto px-6 md:px-0 pt-28 pb-16 flex flex-col items-start">
+      <div className="relative z-10 max-w-260 w-full mx-auto px-6 md:px-0 pt-28 pb-16 flex flex-col items-start">
         
         <div className="flex items-center gap-3 mb-6">
-          <span className="w-8 h-[1px] bg-pink inline-block"></span>
+          <span className="w-8 h-px bg-pink inline-block"></span>
           <p className="text-pink text-xs uppercase tracking-wider font-urbanist">
             Tatuagem autoral · Florianópolis, SC
           </p>
