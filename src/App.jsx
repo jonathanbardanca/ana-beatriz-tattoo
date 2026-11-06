@@ -1,14 +1,13 @@
 import Header from './components/Header';
+import Home from './components/Home';
 
 export default function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-black text-white">
+    <div className="min-h-screen bg-black text-white w-full overflow-x-hidden">
       <Header />
-      <main>
-        <h1 className="text-3xl font-bold text-rose-500 pt-[82]">
-        Ana Beatriz Tattoo — Tailwind v4 OK!
-      </h1>
+      <main className="w-full">
+        <Home />
       </main>
     </div>
-  )
+  );
 }
