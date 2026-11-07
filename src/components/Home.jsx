@@ -21,7 +21,7 @@ export default function Home() {
         </video>
         
       <div className="absolute inset-0 bg-linear-to-r from-black via-black/80 to-transparent" />
-      </div> {/*div que faz gradiente de preto para transparente no vídeo */}
+      </div>{/*div que faz gradiente de preto para transparente no vídeo */}
 
       <div className="relative z-10 max-w-260 w-full mx-auto px-6 md:px-0 pt-28 pb-16 flex flex-col items-start">
         
@@ -40,7 +40,7 @@ export default function Home() {
           Sua história <span className="text-pink font-normal">na pele.</span>
         </p>
 
-        <p className="font-urbanist text-gray-primary text-base md:text-lg max-w-[480px] leading-relaxed mb-10">
+        <p className="font-urbanist text-gray-primary text-base md:text-lg max-w-120 leading-relaxed mb-10">
           Tatuagem é a essência de uma pessoa passada para a pele. Arte que marca momentos, traduz sentimentos e conta a sua história.
         </p>
 

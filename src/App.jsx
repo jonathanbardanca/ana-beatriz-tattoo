@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Home from './components/Home';
 import Sobre from './components/Sobre';
+import Estilo from './components/Estilo';
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <main className="w-full">
         <Home />
         <Sobre />
+        <Estilo />
       </main>
     </div>
   );
