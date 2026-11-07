@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Sobre from './components/Sobre';
 import Estilo from './components/Estilo';
+import Galeria from './components/Galeria';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Home />
         <Sobre />
         <Estilo />
+        <Galeria />
       </main>
     </div>
   );

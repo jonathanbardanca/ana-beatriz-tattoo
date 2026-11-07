@@ -11,7 +11,7 @@ export default function Estilo() {
       className="w-full bg-black py-20 md:py-32"
       aria-label="Estilo de tatuagem de Ana Beatriz"
     >
-      <div className="max-w-[1040px] w-full mx-auto px-6 md:px-0">
+      <div className="max-w-260 w-full mx-auto px-6 md:px-0">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16">
           {/* Lado Esquerdo: Conteúdo e Tipografia */}
           <div className="w-full md:w-1/2 flex flex-col items-start">
@@ -48,9 +48,9 @@ export default function Estilo() {
           </div>
 
           {/* Lado Direito: Mosaico de Fotos com Efeito de Zoom */}
-          <div className="w-full md:w-1/2 relative h-[520px]">
+          <div className="w-full md:w-1/2 relative h-130">
             {/* Foto 1 - Superior Esquerda */}
-            <div className="absolute bottom-0 left-[26%] w-[48%] h-[340px] overflow-hidden z-10">
+            <div className="absolute bottom-0 left-[26%] w-[48%] h-85 overflow-hidden z-10">
               <picture className="w-full h-full block">
                 <source srcSet={fotoEstilo3avif} type="image/avif" />
                 <img
@@ -63,7 +63,7 @@ export default function Estilo() {
             </div>
 
             {/* Foto 2 - Superior Direita */}
-            <div className="absolute top-0 right-0 w-[44%] h-[340px] overflow-hidden">
+            <div className="absolute top-0 right-0 w-[44%] h-85 overflow-hidden">
               <picture className="w-full h-full block">
                 <img
                   src={fotoEstilo1jpg}
@@ -75,7 +75,7 @@ export default function Estilo() {
             </div>
 
             {/* Foto 3 - Inferior Central Sobreposta (Sem borda preta) */}
-            <div className="absolute top-0 left-0 w-[44%] h-[340px] overflow-hidden">
+            <div className="absolute top-0 left-0 w-[44%] h-85 overflow-hidden">
               <picture className="w-full h-full block">
                 <source srcSet={fotoEstilo2avif} type="image/avif" />
                 <img
