@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Sobre from './components/Sobre';
 import Estilo from './components/Estilo';
 import Galeria from './components/Galeria';
+import Disponiveis from './components/Disponiveis';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Sobre />
         <Estilo />
         <Galeria />
+        <Disponiveis />
       </main>
     </div>
   );
