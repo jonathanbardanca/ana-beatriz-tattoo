@@ -1,4 +1,18 @@
-import CarrosselDisponiveis from "./CarrosselDisponiveis";
+import CarrosselReutilizavel from "./CarrosselReutilizavel";
+
+import art1 from "../assets/imagens-disponiveis/art1.png";
+import art2 from "../assets/imagens-disponiveis/art2.png";
+import art3 from "../assets/imagens-disponiveis/art3.png";
+import art4 from "../assets/imagens-disponiveis/art4.png";
+import art5 from "../assets/imagens-disponiveis/art5.png";
+
+const ImagensDisponiveis = [
+  { jpg: art1, alt: "Arte disponível 1" },
+  { jpg: art2, alt: "Arte disponível 2" },
+  { jpg: art3, alt: "Arte disponível 3" },
+  { jpg: art4, alt: "Arte disponível 4" },
+  { jpg: art5, alt: "Arte disponível 5" },
+];
 
 export default function Disponiveis() {
   return (
@@ -19,7 +33,7 @@ export default function Disponiveis() {
           </h2>
       </div>
 
-      <CarrosselDisponiveis />
+      <CarrosselReutilizavel itens={ImagensDisponiveis}/>
 
       <p className="font-urbanist text-gray-primary text-sm md:text-base">
         Desenhos disponíveis

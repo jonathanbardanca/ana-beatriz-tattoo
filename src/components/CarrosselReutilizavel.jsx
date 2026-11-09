@@ -1,20 +1,6 @@
 import { useRef } from "react";
 
-import art1 from "../assets/imagens-disponiveis/art1.png";
-import art2 from "../assets/imagens-disponiveis/art2.png";
-import art3 from "../assets/imagens-disponiveis/art3.png";
-import art4 from "../assets/imagens-disponiveis/art4.png";
-import art5 from "../assets/imagens-disponiveis/art5.png";
-
-const ARTES_DISPONIVEIS = [
-  { jpg: art1, alt: "Arte disponível 1" },
-  { jpg: art2, alt: "Arte disponível 2" },
-  { jpg: art3, alt: "Arte disponível 3" },
-  { jpg: art4, alt: "Arte disponível 4" },
-  { jpg: art5, alt: "Arte disponível 5" },
-];
-
-export default function CarrosselDisponiveis() {
+export default function CarrosselReutilizavel({ itens }) {
   const scrollRef = useRef(null);
 
   const rolar = (direcao) => {
@@ -29,7 +15,7 @@ export default function CarrosselDisponiveis() {
 
   return (
     <div className="relative w-full max-w-260 mx-auto px-6 md:px-0">
-      {/* Seta Esquerda (Posicionada para fora da grid de 1040px, flutuando à esquerda) */}
+      {/*Seta Esquerda*/}
       <button
         onClick={() => rolar("left")}
         className="absolute -left-12 md:-left-16 top-1/2 -translate-y-1/2 z-20 p-4 text-white hover:text-white/80 cursor-pointer transition-colors duration-300"
@@ -50,22 +36,22 @@ export default function CarrosselDisponiveis() {
         </svg>
       </button>
 
-      {/* Container flex com scroll suave travado exatamente nos 1040px */}
+      {/* Container com as fotos*/}
       <div
         ref={scrollRef}
         className="flex gap-2 md:gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory py-4"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
-        {ARTES_DISPONIVEIS.map((img, i) => (
+        {itens.map((img, i) => (
           <div
             key={i}
             className="snap-start shrink-0 w-65 sm:w-61.25 md:w-61.25 h-95 md:h-105 overflow-hidden bg-zinc-900"
           >
             <picture className="w-full h-full block">
-              <source srcSet={img.avif} type="image/avif" />
+              {img.avif && <source srcSet={img.avif} type="image/avif" />}
               <img
                 src={img.jpg}
-                alt={img.alt}
+                alt={img.alt || "Trabalho de tatuagem"}
                 className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 loading="lazy"
               />
@@ -74,7 +60,7 @@ export default function CarrosselDisponiveis() {
         ))}
       </div>
 
-      {/* Seta Direita (Posicionada para fora da grid de 1040px, flutuando à direita) */}
+      {/* Seta Direita*/}
       <button
         onClick={() => rolar("right")}
         className="absolute -right-12 md:-right-16 top-1/2 -translate-y-1/2 z-20 p-4 text-white hover:text-white/80 cursor-pointer transition-colors duration-300"
