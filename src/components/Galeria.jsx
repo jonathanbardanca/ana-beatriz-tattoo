@@ -1,4 +1,4 @@
-import CarrosselReutilizavel from "./CarrosselReutilizavel";
+import CarrosselReutilizavel from "./layout/CarrosselReutilizavel";
 
 import galeria1Avif from "../assets/imagens-galeria/galeria1.avif";
 import galeria1Jpg from "../assets/imagens-galeria/galeria1.jpg";
@@ -51,21 +51,24 @@ const ImagensGaleria = [
 
 export default function Galeria() {
   return (
-    <section id="section-galeria" className="w-full bg-black py-20 md:py-32 text-white overflow-hidden" aria-label="Galeria de tatuagens">
-  
+    <section
+      id="section-galeria"
+      className="w-full bg-black py-20 md:py-32 text-white overflow-hidden"
+      aria-label="Galeria de tatuagens"
+    >
       <div className="max-w-260 w-full mx-auto px-6 md:px-0 flex flex-col">
         <div className="mb-6">
           <h2 className="text-4xl md:text-[40px] font-urbanist text-white mb-3">
-            Traços que 
+            Traços que
             <span className="text-pink"> ficam.</span>
           </h2>
-      </div>
+        </div>
 
-      <CarrosselReutilizavel itens={ImagensGaleria}/>
+        <CarrosselReutilizavel itens={ImagensGaleria} />
 
-      <p className="font-urbanist text-gray-primary text-sm md:text-base">
-        Uma seleção de histórias que já viraram arte.
-      </p>
+        <p className="font-urbanist text-gray-primary text-sm md:text-base">
+          Uma seleção de histórias que já viraram arte.
+        </p>
       </div>
     </section>
   );
