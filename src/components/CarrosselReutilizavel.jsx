@@ -50,7 +50,7 @@ export default function CarrosselReutilizavel({ itens }) {
             <picture className="w-full h-full block">
               {img.avif && <source srcSet={img.avif} type="image/avif" />}
               <img
-                src={img.jpg}
+                src={img.jpeg}
                 alt={img.alt || "Trabalho de tatuagem"}
                 className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 loading="lazy"

@@ -1,17 +1,35 @@
 import CarrosselReutilizavel from "./CarrosselReutilizavel";
 
-import art1 from "../assets/imagens-disponiveis/art1.png";
-import art2 from "../assets/imagens-disponiveis/art2.png";
-import art3 from "../assets/imagens-disponiveis/art3.png";
-import art4 from "../assets/imagens-disponiveis/art4.png";
-import art5 from "../assets/imagens-disponiveis/art5.png";
+import art1 from '../assets/imagens-disponiveis/art1.jpeg';
+import art2 from '../assets/imagens-disponiveis/art2.jpeg';
+import art3 from '../assets/imagens-disponiveis/art3.jpeg';
+import art4 from '../assets/imagens-disponiveis/art4.jpeg';
+import art5 from '../assets/imagens-disponiveis/art5.jpeg';
+import art6 from '../assets/imagens-disponiveis/art6.jpeg';
+import art7 from '../assets/imagens-disponiveis/art7.jpeg';
+import art8 from '../assets/imagens-disponiveis/art8.jpeg';
+import art9 from '../assets/imagens-disponiveis/art9.jpeg';
+import art10 from '../assets/imagens-disponiveis/art10.jpeg';
+import art11 from '../assets/imagens-disponiveis/art11.jpeg';
+import art12 from '../assets/imagens-disponiveis/art12.jpeg';
+import art13 from '../assets/imagens-disponiveis/art13.jpeg';
+import art14 from '../assets/imagens-disponiveis/art14.jpeg';
 
 const ImagensDisponiveis = [
-  { jpg: art1, alt: "Arte disponível 1" },
-  { jpg: art2, alt: "Arte disponível 2" },
-  { jpg: art3, alt: "Arte disponível 3" },
-  { jpg: art4, alt: "Arte disponível 4" },
-  { jpg: art5, alt: "Arte disponível 5" },
+  { jpeg: art1, alt: 'Arte disponível 1' },
+  { jpeg: art2, alt: 'Arte disponível 2' },
+  { jpeg: art3, alt: 'Arte disponível 3' },
+  { jpeg: art4, alt: 'Arte disponível 4' },
+  { jpeg: art5, alt: 'Arte disponível 5' },
+  { jpeg: art6, alt: 'Arte disponível 6' },
+  { jpeg: art7, alt: 'Arte disponível 7' },
+  { jpeg: art8, alt: 'Arte disponível 8' },
+  { jpeg: art9, alt: 'Arte disponível 9' },
+  { jpeg: art10, alt: 'Arte disponível 10' },
+  { jpeg: art11, alt: 'Arte disponível 11' },
+  { jpeg: art12, alt: 'Arte disponível 12' },
+  { jpeg: art13, alt: 'Arte disponível 13' },
+  { jpeg: art14, alt: 'Arte disponível 14' },
 ];
 
 export default function Disponiveis() {
