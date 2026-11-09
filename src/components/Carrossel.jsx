@@ -31,10 +31,6 @@ import galeria14Avif from "../assets/imagens-galeria/galeria14.avif";
 import galeria14Jpg from "../assets/imagens-galeria/galeria14.jpg";
 import galeria15Avif from "../assets/imagens-galeria/galeria15.avif";
 import galeria15Jpg from "../assets/imagens-galeria/galeria15.jpg";
-import galeria16Avif from "../assets/imagens-galeria/galeria16.avif";
-import galeria16Jpg from "../assets/imagens-galeria/galeria16.jpg";
-import galeria17Avif from "../assets/imagens-galeria/galeria17.avif";
-import galeria17Jpg from "../assets/imagens-galeria/galeria17.jpg";
 
 const IMAGENS = [
   { jpg: galeria1Jpg, avif: galeria1Avif, alt: "Tatuagem blackwork 1" },
@@ -52,8 +48,6 @@ const IMAGENS = [
   { jpg: galeria13Jpg, avif: galeria13Avif, alt: "Tatuagem blackwork 13" },
   { jpg: galeria14Jpg, avif: galeria14Avif, alt: "Tatuagem blackwork 14" },
   { jpg: galeria15Jpg, avif: galeria15Avif, alt: "Tatuagem blackwork 15" },
-  { jpg: galeria16Jpg, avif: galeria16Avif, alt: "Tatuagem blackwork 16" },
-  { jpg: galeria17Jpg, avif: galeria17Avif, alt: "Tatuagem blackwork 17" },
 ];
 
 export default function CarrosselGaleria() {
