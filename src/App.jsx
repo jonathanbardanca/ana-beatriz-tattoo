@@ -5,6 +5,7 @@ import Estilo from './components/Estilo';
 import Galeria from './components/Galeria';
 import Disponiveis from './components/Disponiveis';
 import Footer from './components/Footer';
+import Estudio from './components/Estudio';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Estilo />
         <Galeria />
         <Disponiveis />
+        <Estudio />
         <Footer />
       </main>
     </div>

@@ -100,7 +100,7 @@ export default function Footer() {
             Ana Beatriz tattoo
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 ml-14">
             <span>© 2026 Ana Beatriz. Todos os direitos reservados.</span>
           </div>
 

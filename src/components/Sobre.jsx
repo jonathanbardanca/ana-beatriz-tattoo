@@ -13,7 +13,7 @@ export default function Sobre() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16">
           
           {/* foto da tatuadora com picture para opcoes de foto */}
-          <div className="w-full md:w-1/2 relative overflow-hidden rounded-sm">
+          <div className="w-full md:w-1/2 relative overflow-hidden">
           <picture className="w-full h-auto block">
             <source srcSet={fotoSobreAvif} type="image/avif" />
             <img

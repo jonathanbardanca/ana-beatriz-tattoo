@@ -95,7 +95,7 @@ export default function CarrosselGaleria() {
         {IMAGENS.map((img, i) => (
           <div
             key={i}
-            className="snap-start shrink-0 w-65 sm:w-61.25 md:w-61.25 h-95 md:h-105 overflow-hidden rounded-sm bg-zinc-900"
+            className="snap-start shrink-0 w-65 sm:w-61.25 md:w-61.25 h-95 md:h-105 overflow-hiddenbg-zinc-900"
           >
             <picture className="w-full h-full block">
               <source srcSet={img.avif} type="image/avif" />

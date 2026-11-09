@@ -50,7 +50,7 @@ export default function Header() {
             <li>
               <a
                 className="menu-item"
-                href="#rodape"
+                href="#section-estudio"
                 aria-label="Para entrar em contato"
               >
                 Estúdio
