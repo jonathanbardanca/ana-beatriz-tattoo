@@ -1,4 +1,5 @@
-import videoHome from '../assets/Video-home.mp4'; 
+import videoHome from '../assets/Video-home.mp4';
+import BotaoReutilizavel from './layout/BotaoReutilizavel';
 
 export default function Home() {
   return (
@@ -24,7 +25,6 @@ export default function Home() {
       </div>{/*div que faz gradiente de preto para transparente no vídeo */}
 
       <div className="relative z-10 max-w-260 w-full mx-auto px-6 md:px-0 pt-28 pb-16 flex flex-col items-start">
-        
         <div className="flex items-center gap-3 mb-6">
           <span className="w-8 h-px bg-pink inline-block"></span>
           <p className="text-pink text-xs uppercase tracking-wider font-urbanist">
@@ -45,26 +45,12 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap items-center gap-4 mb-16">
-          <a 
-            href="https://wa.me/5548999999999?text=Olá,%20gostaria%20de%20agendar%20um%20horário!" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-pink text-black font-urbanist text-xs uppercase tracking-widest font-semibold px-8 py-4 hover:bg-white transition-colors duration-300"
-            aria-label="Entrar em contato via WhatsApp"
-          >
-            <span>Quero tatuar</span>
+          <BotaoReutilizavel href={"https://wa.me/5548999999999?text=Olá,%20gostaria%20de%20agendar%20um%20horário!"} children={"Quero tatuar"} ariaLabel={"Entrar em contato via WhatsApp"} isExternal = {true} variante={"pink"} icone={
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
-
-          <a 
-            href="#section-galeria"
-            className="inline-flex items-center gap-3 bg-transparent text-white border border-white/30 font-urbanist text-xs uppercase tracking-widest px-8 py-4 hover:border-pink hover:text-pink transition-colors duration-300"
-            aria-label="Ir para a galeria de fotos"
-          >
-            Conheça meu trabalho
-          </a>
+            </svg>} />
+          
+          <BotaoReutilizavel href={"#section-galeria"} children={"Conheça meu trabalho"} ariaLabel={"Ir para a galeria de fotos"} isExternal = {false} variante={"outline"} />
         </div>
 
         <a 

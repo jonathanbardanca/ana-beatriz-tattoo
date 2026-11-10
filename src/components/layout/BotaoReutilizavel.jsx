@@ -8,7 +8,7 @@ export default function BotaoReutilizavel({
   ...props
 }) {
   const classesBase =
-    "flex items-center justify-center gap-3 font-urbanist text-xs tracking-widest font-semibold px-8 py-4 transition-colors duration-300 w-full sm:w-auto";
+    "flex items-center justify-center gap-3 font-urbanist text-xs tracking-widest font-semibold px-8 py-4 transition-colors duration-300 w-full sm:w-auto uppercase";
 
   const estilosVariante = {
     pink: "bg-pink text-black font-semibold hover:bg-white shadow-lg",
@@ -23,8 +23,8 @@ export default function BotaoReutilizavel({
       href={href}
       {...propsExternas}
       className={`${classesBase} ${estilosVariante[variante]}`}
-      {...props}
       aria-label={ariaLabel}
+      {...props}
     >
       {children}
       {icone && <span className="shrink-0">{icone}</span>}
