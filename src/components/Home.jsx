@@ -45,8 +45,8 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap items-center gap-4 mb-16">
-          <BotaoReutilizavel href={"https://wa.me/5548999999999?text=Olá,%20gostaria%20de%20agendar%20um%20horário!"} children={"Quero tatuar"} ariaLabel={"Entrar em contato via WhatsApp"} isExternal = {true} variante={"pink"} icone={
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <BotaoReutilizavel href={"https://wa.me/554891896670?text=Olá,%20gostaria%20de%20agendar%20um%20horário!"} children={"Quero tatuar"} ariaLabel={"Entrar em contato via WhatsApp"} isExternal = {true} variante={"pink"} icone={
+            <svg className="w-4 h-4 duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>} />
           

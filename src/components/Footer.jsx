@@ -1,4 +1,5 @@
 import ornamento from "../assets/ornamento-canto2.png";
+import BotaoReutilizavel from "./layout/BotaoReutilizavel";
 
 export default function Footer() {
   return (
@@ -7,7 +8,6 @@ export default function Footer() {
       className="w-full bg-black-80 text-white relative overflow-hidden"
     >
       <div className="relative w-full bg-black-80 py-20 md:py-12 px-6 overflow-hidden">
-        
         {/* Ornamento Superior Esquerdo*/}
         <div className="absolute top-4 left-4 md:top-8 md:left-8 w-28 md:w-36 h-28 md:h-36 pointer-events-none opacity-80 rotate-90">
           <img
@@ -47,37 +47,42 @@ export default function Footer() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
             {/* Botão WhatsApp */}
-            <a
-              href="https://wa.me/5548999999999"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto flex items-center justify-center gap-3 bg-pink text-black font-urbanist font-medium px-8 py-4 rounded-sm hover:opacity-90 transition-all duration-300 shadow-lg group"
-            >
-              <span>Vamos conversar</span>
-              <svg
-                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            </a>
+            <BotaoReutilizavel
+              href={
+                "https://wa.me/554891896670?text=Olá,%20gostaria%20de%20agendar%20um%20horário!"
+              }
+              children={"Vamos conversar"}
+              ariaLabel={"Entrar em contato via WhatsApp"}
+              isExternal={true}
+              variante={"pink"}
+              icone={
+                <svg
+                  className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              }
+            />
 
             {/* Botão Instagram */}
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto flex items-center justify-center gap-3 bg-transparent border border-zinc-700 text-white font-urbanist font-medium px-8 py-4 rounded-sm hover:border-pink hover:text-pink transition-all duration-300"
-            >
-              <svg
-                className="w-5 h-5"
+            <BotaoReutilizavel
+              href={"https://instagram.com"}
+              children={"Instagram"}
+              ariaLabel={"Vai para o instagram da tatuadora"}
+              isExternal={true}
+              variante={"outline"}
+              posicaoIcone = "inicio"
+              icone={
+                <svg
+                className="w-4 h-4"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.5"
@@ -87,8 +92,8 @@ export default function Footer() {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
               </svg>
-              <span>Instagram</span>
-            </a>
+              }
+            />
           </div>
         </div>
       </div>
