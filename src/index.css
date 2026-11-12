@@ -84,3 +84,29 @@ ul:hover .menu-item.active:hover {
 ul:hover .menu-item.active:hover::after {
   width: 100%;
 }
+
+@keyframes drawText {
+  0% {
+    stroke-dashoffset: 600;
+    stroke: #ffffff;
+    fill: transparent;
+    filter: drop-shadow(0 0 0px transparent);
+  }
+  65% {
+    stroke-dashoffset: 0;
+    stroke: #ffffff;
+    fill: transparent;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #ff2a85; /* Cor rosa principal do projeto */
+    fill: #ff2a85;
+    filter: drop-shadow(0 0 14px rgba(255, 42, 133, 0.75));
+  }
+}
+
+.logo-text {
+  stroke-dasharray: 600;
+  animation: drawText 2.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}

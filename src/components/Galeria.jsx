@@ -32,21 +32,96 @@ import galeria15Avif from "../assets/imagens-galeria/galeria15.avif";
 import galeria15Jpg from "../assets/imagens-galeria/galeria15.jpg";
 
 const ImagensGaleria = [
-  { jpg: galeria1Jpg, avif: galeria1Avif, alt: "Tatuagem blackwork estilo ramo botânico", titulo: "Ramo Botânico" },
-  { jpg: galeria2Jpg, avif: galeria2Avif, alt: "Tatuagem blackwork estilo floral delicado", titulo: "Floral Delicate" },
-  { jpg: galeria3Jpg, avif: galeria3Avif, alt: "Tatuagem blackwork estilo geométrico dark", titulo: "Geometric Dark" },
-  { jpg: galeria4Jpg, avif: galeria4Avif, alt: "Tatuagem blackwork estilo snake minimalista", titulo: "Snake Minimalista" },
-  { jpg: galeria5Jpg, avif: galeria5Avif, alt: "Tatuagem blackwork estilo ornamental de braço", titulo: "Ornamental Braço" },
-  { jpg: galeria6Jpg, avif: galeria6Avif, alt: "Tatuagem fine line nas costelas", titulo: "Fine Line Costelas" },
-  { jpg: galeria7Jpg, avif: galeria7Avif, alt: "Tatuagem autoral blackwork", titulo: "Pneuma Tattoo" },
-  { jpg: galeria8Jpg, avif: galeria8Avif, alt: "Tatuagem blackwork de flor de lótus", titulo: "Flor de Lótus" },
-  { jpg: galeria9Jpg, avif: galeria9Avif, alt: "Tatuagem darkwork estilo abstrato", titulo: "Darkwork Abstrato" },
-  { jpg: galeria10Jpg, avif: galeria10Avif, alt: "Tatuagem blackwork de adaga ornamental", titulo: "Adaga Ornamental" },
-  { jpg: galeria11Jpg, alt: "Tatuagem blackwork de ramo nas costas", avif: galeria11Avif, titulo: "Ramo Costas" },
-  { jpg: galeria12Jpg, alt: "Tatuagem estilo full blackwork", avif: galeria12Avif, titulo: "Full Blackwork" },
-  { jpg: galeria13Jpg, alt: "Tatuagem blackwork de cobra e flores", avif: galeria13Avif, titulo: "Cobra e Flores" },
-  { jpg: galeria14Jpg, alt: "Tatuagem estilo lua minimalista", avif: galeria14Avif, titulo: "Lua Minimalista" },
-  { jpg: galeria15Jpg, alt: "Tatuagem blackwork de peônia sombreada", avif: galeria15Avif, titulo: "Peônia Sombreada" },
+  {
+    jpg: galeria1Jpg,
+    avif: galeria1Avif,
+    alt: "Tatuagem blackwork estilo ramo botânico",
+    titulo: "Ramo Botânico",
+  },
+  {
+    jpg: galeria2Jpg,
+    avif: galeria2Avif,
+    alt: "Tatuagem blackwork estilo floral delicado",
+    titulo: "Floral Delicate",
+  },
+  {
+    jpg: galeria3Jpg,
+    avif: galeria3Avif,
+    alt: "Tatuagem blackwork estilo geométrico dark",
+    titulo: "Geometric Dark",
+  },
+  {
+    jpg: galeria4Jpg,
+    avif: galeria4Avif,
+    alt: "Tatuagem blackwork estilo snake minimalista",
+    titulo: "Snake Minimalista",
+  },
+  {
+    jpg: galeria5Jpg,
+    avif: galeria5Avif,
+    alt: "Tatuagem blackwork estilo ornamental de braço",
+    titulo: "Ornamental Braço",
+  },
+  {
+    jpg: galeria6Jpg,
+    avif: galeria6Avif,
+    alt: "Tatuagem fine line nas costelas",
+    titulo: "Fine Line Costelas",
+  },
+  {
+    jpg: galeria7Jpg,
+    avif: galeria7Avif,
+    alt: "Tatuagem autoral blackwork",
+    titulo: "Pneuma Tattoo",
+  },
+  {
+    jpg: galeria8Jpg,
+    avif: galeria8Avif,
+    alt: "Tatuagem blackwork de flor de lótus",
+    titulo: "Flor de Lótus",
+  },
+  {
+    jpg: galeria9Jpg,
+    avif: galeria9Avif,
+    alt: "Tatuagem darkwork estilo abstrato",
+    titulo: "Darkwork Abstrato",
+  },
+  {
+    jpg: galeria10Jpg,
+    avif: galeria10Avif,
+    alt: "Tatuagem blackwork de adaga ornamental",
+    titulo: "Adaga Ornamental",
+  },
+  {
+    jpg: galeria11Jpg,
+    alt: "Tatuagem blackwork de ramo nas costas",
+    avif: galeria11Avif,
+    titulo: "Ramo Costas",
+  },
+  {
+    jpg: galeria12Jpg,
+    alt: "Tatuagem estilo full blackwork",
+    avif: galeria12Avif,
+    titulo: "Full Blackwork",
+  },
+  {
+    jpg: galeria13Jpg,
+    alt: "Tatuagem blackwork de cobra e flores",
+    avif: galeria13Avif,
+    titulo: "Cobra e Flores",
+  },
+  {
+    jpg: galeria14Jpg,
+    alt: "Tatuagem estilo lua minimalista",
+    avif: galeria14Avif,
+    titulo: "Lua Minimalista",
+  },
+  {
+    jpg: galeria15Jpg,
+    alt: "Tatuagem blackwork de peônia sombreada",
+    avif: galeria15Avif,
+    titulo: "Peônia Sombreada",
+  },
 ];
 
 export default function Galeria() {
