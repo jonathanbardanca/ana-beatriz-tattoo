@@ -9,7 +9,7 @@ export default function BotaoReutilizavel({
   ...props
 }) {
   const classesBase =
-    "flex items-center justify-center gap-3 font-urbanist text-xs tracking-widest font-semibold px-8 py-4 transition-colors duration-300 w-full sm:w-auto uppercase disabled:pointer-events-none disabled:opacity-50";
+    "flex items-center justify-center gap-3 font-urbanist text-xs leading-none tracking-widest font-semibold px-8 py-4 transition-colors duration-300 w-full sm:w-auto uppercase disabled:pointer-events-none disabled:opacity-50";
 
   const estilosVariante = {
     pink: "bg-pink text-black font-semibold hover:bg-white shadow-lg group focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white",

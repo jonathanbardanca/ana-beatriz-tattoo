@@ -22,12 +22,12 @@
 .menu-item {
   position: relative;
   font-family: var(--font-urbanist);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #B3B3B3;
   transition: color 0.3s ease;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .menu-item::after {
@@ -41,6 +41,29 @@
   transition: width 0.2s ease-in-out;
 }
 
-.menu-item:hover::after {
+/* Quando o mouse está em cima do item (ou ele está ativo), fica branco e expande a linha */
+.menu-item:hover,
+.menu-item.active {
+  color: white;
+}
+
+.menu-item:hover::after,
+.menu-item.active::after {
+  width: 100%;
+}
+
+/* A MÁGICA: Quando o mouse entra na lista inteira (group), o item ativo descansa temporariamente... */
+ul:hover .menu-item.active {
+  color: #B3B3B3;
+}
+ul:hover .menu-item.active::after {
+  width: 0%;
+}
+
+/* ...exceto se o mouse estiver exatamente em cima do item ativo! */
+ul:hover .menu-item.active:hover {
+  color: white;
+}
+ul:hover .menu-item.active:hover::after {
   width: 100%;
 }
