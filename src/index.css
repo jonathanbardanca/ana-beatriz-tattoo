@@ -1,16 +1,33 @@
 @import "tailwindcss";
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1e1f22;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #303136;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: palevioletred;
+}
+
 @theme {
   --font-italiana: "Italiana", serif;
   --font-urbanist: "Urbanist", sans-serif;
   --font-script: "Italianno", "Italiana", serif;
 
-  --color-pink: #DB7093;
+  --color-pink: #db7093;
   --color-black-100: #000000;
   --color-black-90: #121215;
-  --color-black-80: #1B1B1E;
-  --color-gray-primary: #B3B3B3;
-  --color-gray-secundary: #A1A1A6;
+  --color-black-80: #1b1b1e;
+  --color-gray-primary: #b3b3b3;
+  --color-gray-secundary: #a1a1a6;
 }
 
 @utility container {
@@ -25,13 +42,13 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: #B3B3B3;
+  color: #b3b3b3;
   transition: color 0.3s ease;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .menu-item::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -54,7 +71,7 @@
 
 /* A MÁGICA: Quando o mouse entra na lista inteira (group), o item ativo descansa temporariamente... */
 ul:hover .menu-item.active {
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
 ul:hover .menu-item.active::after {
   width: 0%;
