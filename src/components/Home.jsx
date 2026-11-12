@@ -24,7 +24,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-linear-to-r from-black via-black/80 to-transparent" />
       </div>{/*div que faz gradiente de preto para transparente no vídeo */}
 
-      <div className="relative z-10 max-w-260 w-full mx-auto px-6 md:px-0 pt-28 pb-16 flex flex-col items-start">
+      <div className="relative z-10 max-w-260 w-full mx-auto px-6 md:px-0 pt-28 pb-16 flex flex-col items-start h-screen mt-7">
         <div className="flex items-center gap-3 mb-6">
           <span className="w-8 h-px bg-pink inline-block"></span>
           <p className="text-pink text-xs uppercase tracking-wider font-urbanist">
@@ -55,7 +55,7 @@ export default function Home() {
 
         <a 
           href="#section-sobre" 
-          className="inline-flex items-center gap-2 text-gray-secondary font-urbanist text-[11px] uppercase tracking-[0.25em] hover:text-pink transition-colors duration-300"
+          className="inline-flex items-center gap-2 text-gray-secondary font-urbanist text-[11px] uppercase tracking-[0.25em] hover:text-pink transition-colors duration-300 mt-auto"
           aria-label="Ir para a seção sobre a tatuadora"
         >
           <svg className="w-3.5 h-3.5 text-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
