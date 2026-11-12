@@ -1,16 +1,41 @@
-# React + Vite
+# Ana Beatriz Tattoo — Portfólio & Estúdio Autoral
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page institucional e portfólio desenvolvido para a tatuadora Ana Beatriz (Florianópolis, SC), com foco em estética editorial, performance, acessibilidade e experiência mobile-first.
 
-Currently, two official plugins are available:
+🔗 ** ana-beatriz-tattoo.vercel.app **
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Destaques Técnicos & UX
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Design Editorial & Responsivo:** Layout construído com abordagem *Mobile-First*, tipografia customizada (`Italiana`, `Urbanist`) e paleta contrastante em preto e rosa.
+- **Carrossel Interativo Nativo:** Componente reutilizável com suporte a *drag-to-scroll* (arraste fluido via mouse no desktop e touch no mobile) usando `scroll-snap` nativo, sem dependência de bibliotecas pesadas.
+- **Tooltip Dinâmico:** Balão flutuante que acompanha o cursor com cálculo automático de limites de tela (desativado em dispositivos móveis).
+- **Performance & Otimização:** Uso de imagens modernas (`AVIF` com fallback em `JPG`) via tag `<picture>`, carregamento sob demanda (`loading="lazy"`) e vídeo de fundo otimizado com `preload="metadata"`.
+- **Acessibilidade (A11y) & SEO:** Estrutura HTML semântica, atributos `aria-label`, `aria-hidden` para elementos puramente decorativos e textos alternativos descritivos.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologias Utilizadas
+
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **HTML5 / CSS3 / JavaScript (ES6+)**
+
+---
+
+## 🚀 Como rodar o projeto localmente
+
+```bash
+# Clone este repositório
+git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+
+# Acesse a pasta do projeto
+cd nome-do-repositorio
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
