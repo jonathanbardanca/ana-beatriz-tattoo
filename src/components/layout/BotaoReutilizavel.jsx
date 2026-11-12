@@ -13,7 +13,7 @@ export default function BotaoReutilizavel({
 
   const estilosVariante = {
     pink: "bg-pink text-black font-semibold hover:bg-white shadow-lg group",
-    outline: "bg-transparent text-white border border-white/30 tracking-widest hover:border-pink hover:text-pink",
+    outline: "bg-transparent text-white border border-white/30 tracking-widest hover:border-pink group",
     discreto: "bg-transparent text-gray-secondary text-[11px] uppercase tracking-[0.25em] hover:text-pink py-2"
   };
 
