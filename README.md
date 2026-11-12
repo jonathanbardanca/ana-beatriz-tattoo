@@ -2,7 +2,7 @@
 
 Landing page institucional e portfólio desenvolvido para a tatuadora Ana Beatriz (Florianópolis, SC), com foco em estética editorial, performance, acessibilidade e experiência mobile-first.
 
-🔗 ** ana-beatriz-tattoo.vercel.app **
+🔗 ** https://ana-beatriz-tattoo.vercel.app **
 
 ---
 
