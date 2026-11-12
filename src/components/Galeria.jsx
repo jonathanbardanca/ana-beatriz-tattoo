@@ -32,21 +32,21 @@ import galeria15Avif from "../assets/imagens-galeria/galeria15.avif";
 import galeria15Jpg from "../assets/imagens-galeria/galeria15.jpg";
 
 const ImagensGaleria = [
-  { jpg: galeria1Jpg, avif: galeria1Avif, alt: "Tatuagem blackwork 1" },
-  { jpg: galeria2Jpg, avif: galeria2Avif, alt: "Tatuagem blackwork 2" },
-  { jpg: galeria3Jpg, avif: galeria3Avif, alt: "Tatuagem blackwork 3" },
-  { jpg: galeria4Jpg, avif: galeria4Avif, alt: "Tatuagem blackwork 4" },
-  { jpg: galeria5Jpg, avif: galeria5Avif, alt: "Tatuagem blackwork 5" },
-  { jpg: galeria6Jpg, avif: galeria6Avif, alt: "Tatuagem blackwork 6" },
-  { jpg: galeria7Jpg, avif: galeria7Avif, alt: "Tatuagem blackwork 7" },
-  { jpg: galeria8Jpg, avif: galeria8Avif, alt: "Tatuagem blackwork 8" },
-  { jpg: galeria9Jpg, avif: galeria9Avif, alt: "Tatuagem blackwork 9" },
-  { jpg: galeria10Jpg, avif: galeria10Avif, alt: "Tatuagem blackwork 10" },
-  { jpg: galeria11Jpg, avif: galeria11Avif, alt: "Tatuagem blackwork 11" },
-  { jpg: galeria12Jpg, avif: galeria12Avif, alt: "Tatuagem blackwork 12" },
-  { jpg: galeria13Jpg, avif: galeria13Avif, alt: "Tatuagem blackwork 13" },
-  { jpg: galeria14Jpg, avif: galeria14Avif, alt: "Tatuagem blackwork 14" },
-  { jpg: galeria15Jpg, avif: galeria15Avif, alt: "Tatuagem blackwork 15" },
+  { jpg: galeria1Jpg, avif: galeria1Avif, alt: "Tatuagem blackwork 1", titulo: "Ramo Botânico" },
+  { jpg: galeria2Jpg, avif: galeria2Avif, alt: "Tatuagem blackwork 2", titulo: "Floral Delicate" },
+  { jpg: galeria3Jpg, avif: galeria3Avif, alt: "Tatuagem blackwork 3", titulo: "Geometric Dark" },
+  { jpg: galeria4Jpg, avif: galeria4Avif, alt: "Tatuagem blackwork 4", titulo: "Snake Minimalista" },
+  { jpg: galeria5Jpg, avif: galeria5Avif, alt: "Tatuagem blackwork 5", titulo: "Ornamental Braço" },
+  { jpg: galeria6Jpg, avif: galeria6Avif, alt: "Tatuagem blackwork 6", titulo: "Fine Line Costelas" },
+  { jpg: galeria7Jpg, avif: galeria7Avif, alt: "Tatuagem blackwork 7", titulo: "Pneuma Tattoo" },
+  { jpg: galeria8Jpg, avif: galeria8Avif, alt: "Tatuagem blackwork 8", titulo: "Flor de Lótus" },
+  { jpg: galeria9Jpg, avif: galeria9Avif, alt: "Tatuagem blackwork 9", titulo: "Darkwork Abstrato" },
+  { jpg: galeria10Jpg, avif: galeria10Avif, alt: "Tatuagem blackwork 10", titulo: "Adaga Ornamental" },
+  { jpg: galeria11Jpg, avif: galeria11Avif, alt: "Tatuagem blackwork 11", titulo: "Ramo Costas" },
+  { jpg: galeria12Jpg, avif: galeria12Avif, alt: "Tatuagem blackwork 12", titulo: "Full Blackwork" },
+  { jpg: galeria13Jpg, avif: galeria13Avif, alt: "Tatuagem blackwork 13", titulo: "Cobra e Flores" },
+  { jpg: galeria14Jpg, avif: galeria14Avif, alt: "Tatuagem blackwork 14", titulo: "Lua Minimalista" },
+  { jpg: galeria15Jpg, avif: galeria15Avif, alt: "Tatuagem blackwork 15", titulo: "Peônia Sombreada" },
 ];
 
 export default function Galeria() {

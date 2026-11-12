@@ -1,7 +1,13 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import Tooltip from "./Tooltip.jsx";
 
 export default function CarrosselReutilizavel({ itens }) {
   const scrollRef = useRef(null);
+  
+  // Estados para controlar o arraste com o mouse (Drag to Scroll)
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
 
   const rolar = (direcao) => {
     if (scrollRef.current) {
@@ -11,6 +17,25 @@ export default function CarrosselReutilizavel({ itens }) {
         behavior: "smooth",
       });
     }
+  };
+
+  // Funções para permitir o arraste fluído com o mouse no desktop e touch no mobile
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseLeaveOrUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Velocidade do arraste
+    scrollRef.current.scrollLeft = scrollLeft - walk;
   };
 
   return (
@@ -36,26 +61,37 @@ export default function CarrosselReutilizavel({ itens }) {
         </svg>
       </button>
 
-      {/* Container com as fotos*/}
+      {/* Container com as fotos + Lógica de Arraste com o Mouse */}
       <div
         ref={scrollRef}
-        className="flex gap-2 md:gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory py-4"
+        onMouseDown={handleMouseDown}
+        onMouseLeave={handleMouseLeaveOrUp}
+        onMouseUp={handleMouseLeaveOrUp}
+        onMouseMove={handleMouseMove}
+        className={`flex gap-2 md:gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory py-4 select-none ${
+          isDragging ? "cursor-grabbing" : "cursor-grab"
+        }`}
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {itens.map((img, i) => (
           <div
             key={i}
-            className="snap-start shrink-0 w-65 sm:w-61.25 md:w-61.25 h-95 md:h-105 overflow-hidden bg-zinc-900"
+            className="snap-start shrink-0 w-65 sm:w-61.25 md:w-61.25 h-95 md:h-105"
           >
-            <picture className="w-full h-full block">
-              {img.avif && <source srcSet={img.avif} type="image/avif" />}
-              <img
-                src={img.jpeg}
-                alt={img.alt || "Trabalho de tatuagem"}
-                className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
-                loading="lazy"
-              />
-            </picture>
+            {/* Tooltip envolvendo o card */}
+            <Tooltip text={img.titulo || "Trabalho exclusivo"}>
+              <div className="w-full h-full overflow-hidden bg-zinc-900 rounded-md">
+                <picture className="w-full h-full block">
+                  {img.avif && <source srcSet={img.avif} type="image/avif" />}
+                  <img
+                    src={img.jpeg}
+                    alt={img.alt || "Trabalho de tatuagem"}
+                    className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105 pointer-events-none"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </Tooltip>
           </div>
         ))}
       </div>
