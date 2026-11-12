@@ -32,21 +32,21 @@ import galeria15Avif from "../assets/imagens-galeria/galeria15.avif";
 import galeria15Jpg from "../assets/imagens-galeria/galeria15.jpg";
 
 const ImagensGaleria = [
-  { jpg: galeria1Jpg, avif: galeria1Avif, alt: "Tatuagem blackwork 1", titulo: "Ramo Botânico" },
-  { jpg: galeria2Jpg, avif: galeria2Avif, alt: "Tatuagem blackwork 2", titulo: "Floral Delicate" },
-  { jpg: galeria3Jpg, avif: galeria3Avif, alt: "Tatuagem blackwork 3", titulo: "Geometric Dark" },
-  { jpg: galeria4Jpg, avif: galeria4Avif, alt: "Tatuagem blackwork 4", titulo: "Snake Minimalista" },
-  { jpg: galeria5Jpg, avif: galeria5Avif, alt: "Tatuagem blackwork 5", titulo: "Ornamental Braço" },
-  { jpg: galeria6Jpg, avif: galeria6Avif, alt: "Tatuagem blackwork 6", titulo: "Fine Line Costelas" },
-  { jpg: galeria7Jpg, avif: galeria7Avif, alt: "Tatuagem blackwork 7", titulo: "Pneuma Tattoo" },
-  { jpg: galeria8Jpg, avif: galeria8Avif, alt: "Tatuagem blackwork 8", titulo: "Flor de Lótus" },
-  { jpg: galeria9Jpg, avif: galeria9Avif, alt: "Tatuagem blackwork 9", titulo: "Darkwork Abstrato" },
-  { jpg: galeria10Jpg, avif: galeria10Avif, alt: "Tatuagem blackwork 10", titulo: "Adaga Ornamental" },
-  { jpg: galeria11Jpg, avif: galeria11Avif, alt: "Tatuagem blackwork 11", titulo: "Ramo Costas" },
-  { jpg: galeria12Jpg, avif: galeria12Avif, alt: "Tatuagem blackwork 12", titulo: "Full Blackwork" },
-  { jpg: galeria13Jpg, avif: galeria13Avif, alt: "Tatuagem blackwork 13", titulo: "Cobra e Flores" },
-  { jpg: galeria14Jpg, avif: galeria14Avif, alt: "Tatuagem blackwork 14", titulo: "Lua Minimalista" },
-  { jpg: galeria15Jpg, avif: galeria15Avif, alt: "Tatuagem blackwork 15", titulo: "Peônia Sombreada" },
+  { jpg: galeria1Jpg, avif: galeria1Avif, alt: "Tatuagem blackwork estilo ramo botânico", titulo: "Ramo Botânico" },
+  { jpg: galeria2Jpg, avif: galeria2Avif, alt: "Tatuagem blackwork estilo floral delicado", titulo: "Floral Delicate" },
+  { jpg: galeria3Jpg, avif: galeria3Avif, alt: "Tatuagem blackwork estilo geométrico dark", titulo: "Geometric Dark" },
+  { jpg: galeria4Jpg, avif: galeria4Avif, alt: "Tatuagem blackwork estilo snake minimalista", titulo: "Snake Minimalista" },
+  { jpg: galeria5Jpg, avif: galeria5Avif, alt: "Tatuagem blackwork estilo ornamental de braço", titulo: "Ornamental Braço" },
+  { jpg: galeria6Jpg, avif: galeria6Avif, alt: "Tatuagem fine line nas costelas", titulo: "Fine Line Costelas" },
+  { jpg: galeria7Jpg, avif: galeria7Avif, alt: "Tatuagem autoral blackwork", titulo: "Pneuma Tattoo" },
+  { jpg: galeria8Jpg, avif: galeria8Avif, alt: "Tatuagem blackwork de flor de lótus", titulo: "Flor de Lótus" },
+  { jpg: galeria9Jpg, avif: galeria9Avif, alt: "Tatuagem darkwork estilo abstrato", titulo: "Darkwork Abstrato" },
+  { jpg: galeria10Jpg, avif: galeria10Avif, alt: "Tatuagem blackwork de adaga ornamental", titulo: "Adaga Ornamental" },
+  { jpg: galeria11Jpg, alt: "Tatuagem blackwork de ramo nas costas", avif: galeria11Avif, titulo: "Ramo Costas" },
+  { jpg: galeria12Jpg, alt: "Tatuagem estilo full blackwork", avif: galeria12Avif, titulo: "Full Blackwork" },
+  { jpg: galeria13Jpg, alt: "Tatuagem blackwork de cobra e flores", avif: galeria13Avif, titulo: "Cobra e Flores" },
+  { jpg: galeria14Jpg, alt: "Tatuagem estilo lua minimalista", avif: galeria14Avif, titulo: "Lua Minimalista" },
+  { jpg: galeria15Jpg, alt: "Tatuagem blackwork de peônia sombreada", avif: galeria15Avif, titulo: "Peônia Sombreada" },
 ];
 
 export default function Galeria() {
@@ -54,18 +54,20 @@ export default function Galeria() {
     <section
       id="section-galeria"
       className="w-full bg-black py-20 md:py-32 text-white overflow-hidden"
-      aria-label="Galeria de tatuagens"
+      aria-label="Galeria de tatuagens autorais"
     >
-      <div className="max-w-260 w-full mx-auto px-6 md:px-0 flex flex-col">
+      <div className="max-w-260 w-full mx-auto px-6 lg:px-0 flex flex-col">
+        {/* Cabeçalho com o título */}
         <div className="mb-6">
-          <h2 className="text-4xl md:text-[40px] font-urbanist text-white mb-3">
-            Traços que
-            <span className="text-pink"> ficam.</span>
+          <h2 className="text-3xl sm:text-4xl md:text-[40px] font-urbanist text-white">
+            Traços que <span className="text-pink">ficam.</span>
           </h2>
         </div>
 
+        {/* Carrossel reutilizável no meio */}
         <CarrosselReutilizavel itens={ImagensGaleria} />
 
+        {/* Parágrafo explicativo logo abaixo, conforme sua estrutura original */}
         <p className="font-urbanist text-gray-primary text-sm md:text-base">
           Uma seleção de histórias que já viraram arte.
         </p>

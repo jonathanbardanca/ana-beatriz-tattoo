@@ -7,19 +7,20 @@ export default function Sobre() {
     <section
       id="section-sobre"
       className="w-full bg-black py-20 md:py-32 text-white"
-      aria-label="Sobre Ana Beatriz"
+      aria-label="Sobre a tatuadora Ana Beatriz"
     >
-      <div className="max-w-260 w-full mx-auto px-6 md:px-0">
+      <div className="max-w-260 w-full mx-auto px-6 lg:px-0">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16">
-          {/* foto da tatuadora */}
+          
+          {/* Foto da tatuadora com o ornamento ajustado para mobile */}
           <div className="relative inline-block w-full md:w-1/2">
-            <div className="w-full relative overflow-hidden">
+            <div className="w-full relative overflow-hidden rounded-sm">
               <picture className="w-full h-auto block">
                 <source srcSet={fotoSobreAvif} type="image/avif" />
                 <img
                   src={fotoSobreJpg}
-                  alt="Tatuadora Ana Beatriz em seu estúdio"
-                  className="w-full h-137.5 object-cover object-left transition-transform duration-500 hover:scale-105"
+                  alt="Ana Beatriz em seu estúdio de tatuagem"
+                  className="w-full h-112 sm:h-137.5 object-cover object-left transition-transform duration-500 hover:scale-105"
                   loading="lazy"
                 />
               </picture>
@@ -28,14 +29,15 @@ export default function Sobre() {
             <img
               src={ornamento}
               alt=""
-              className="absolute bottom-[-24px] left-[-24px] w-36 h-auto z-20 pointer-events-none text-pink rotate-180"
+              aria-hidden="true"
+              className="absolute -bottom-4 -left-4 sm:bottom-[-24px] sm:left-[-24px] w-28 sm:w-36 h-auto z-25 pointer-events-none text-pink rotate-180"
             />
           </div>
 
           {/* Coluna da Direita: Textos */}
           <div className="w-full md:w-1/2 flex flex-col items-start">
             <div className="flex items-center gap-3 mb-6">
-              <span className="w-8 h-px bg-pink inline-block"></span>
+              <span className="w-8 h-px bg-pink inline-block" aria-hidden="true"></span>
               <p className="text-pink text-xs uppercase tracking-wider font-urbanist">
                 A artista por trás do traço
               </p>
@@ -67,7 +69,7 @@ export default function Sobre() {
               href="https://www.instagram.com/anabtrix_tattoo/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Link para o Instagram da tatuadora"
+              aria-label="Abrir o perfil do Instagram da tatuadora em nova aba"
               className="
                 group relative inline-flex items-center gap-3 px-5 py-3 
                 font-urbanist text-sm uppercase tracking-[0.25em] text-gray-primary 
@@ -94,6 +96,7 @@ export default function Sobre() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                aria-hidden="true"
                 className="transition-colors duration-300 group-hover:stroke-pink"
               >
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
